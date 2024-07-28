@@ -1,0 +1,137 @@
+@import "colors-waybar.css";
+
+window#waybar {
+  color: @foreground;
+  background-color: @background;
+
+  opacity: .7;
+  
+  border-radius: 50px;
+}
+
+#workspaces {
+  margin: 5px;
+
+  font-weight: bold;
+
+  background-color: @color3;
+
+  border-radius: 50px;
+}
+
+#workspaces {
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+  background-color: @color9;
+
+  border-radius: 50px;
+}
+
+
+#window {
+  margin: 5px;
+  
+  padding: 0 10px;
+
+  background-color: @color3;
+
+  opacity: 1;
+
+  border-radius: 50px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+}
+
+#pulseaudio {
+  margin: 5px;
+  
+  padding: 0 10px;
+
+  background-color: @color3;
+
+  opacity: 1;
+
+  border-radius: 50px;
+}
+
+#network {
+  margin: 5px;
+  
+  padding: 0 10px;
+
+  background-color: @color3;
+
+  opacity: 1;
+
+  border-radius: 50px;
+}
+
+#hardware {
+  margin: 5px;
+  
+  background-color: @color3;
+
+  opacity: 1;
+
+  border-radius: 50px;
+}
+
+#custom-system {
+  padding: 0 10px;
+}
+
+#temperature {
+  padding: 0 10px;
+} 
+
+#memory {
+  padding: 0 10px;
+} 
+
+#cpu {
+  padding: 0 10px;
+} 
+
+#backlight {
+  margin: 5px;
+  
+  padding: 0 10px;
+
+  background-color: @color3;
+
+  opacity: 1;
+
+  border-radius: 50px;
+}
+
+#battery {
+  margin: 5px;
+  
+  padding: 0 10px;
+
+  background-color: @color3;
+
+  opacity: 1;
+
+  border-radius: 50px;
+}
+
+#clock {
+  margin: 5px;
+  
+  padding: 0 10px;
+
+  background-color: @color3;
+
+  opacity: 1;
+
+  border-radius: 50px;
+}
+
+#custom-power {
+  margin: 5px;
+}
