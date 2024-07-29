@@ -16,3 +16,4 @@ wal -i $wallpaper
 
 ln -sf $HOME/.cache/wal/colors-waybar.css $HOME/.config/waybar/colors-waybar.css
 ln -sf $HOME/.cache/wal/colors-waybar.css $HOME/.config/wlogout/colors.css
+ln -sf $HOME/.cache/wal/colors-rofi-dark.rasi $HOME/.config/rofi/colors.rasi

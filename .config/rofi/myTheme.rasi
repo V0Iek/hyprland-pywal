@@ -1,0 +1,8 @@
+entry {
+  placeholder: "Search 󰍉";
+}
+
+element {
+  orientation: horizontal;
+  children: [ element-icon, element-text ];
+}
