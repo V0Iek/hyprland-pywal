@@ -15,3 +15,4 @@ hyprctl hyprpaper wallpaper "eDP-1, $wallpaper"
 wal -i $wallpaper
 
 ln -sf $HOME/.cache/wal/colors-waybar.css $HOME/.config/waybar/colors-waybar.css
+ln -sf $HOME/.cache/wal/colors-waybar.css $HOME/.config/wlogout/colors.css

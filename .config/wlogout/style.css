@@ -1,0 +1,46 @@
+@import "colors.css";
+
+* {
+  background-image: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: @background;
+  
+  opacity: .8;
+}
+
+button {
+  margin: 20px;
+
+  color: @foreground;
+  background-color: @background;
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  
+  border-radius: 15px;
+}
+
+button:focus, button:active, button:hover {
+  background-color: @color3;
+  outline-style: none;
+}
+
+#lock {
+  background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+  background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#shutdown {
+  background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+  background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}

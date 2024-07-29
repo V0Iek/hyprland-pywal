@@ -4,6 +4,7 @@
   },
   
   "clock": {
+    "format": "{:%Od %b %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
     "format-alt": "{:%Y-%m-%d}"
   },
@@ -50,10 +51,10 @@
     },
     "format": "{capacity}% {icon}",
     "format-full": "{capacity}% {icon}",
-    "format-charging": "{capacity}% ",
+    "format-charging": "{capacity}%  ",
     "format-plugged": "{capacity}% ",
     "format-alt": "{time} {icon}",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": [" ", " ", " ", " ", " "]
   },
   
   "power-profiles-daemon": {
@@ -63,8 +64,8 @@
     "format-icons": {
       "default": "",
       "performance": "",
-      "balanced": "",
-      "power-saver": ""
+      "balanced": " ",
+      "power-saver": " "
     }
   },
   

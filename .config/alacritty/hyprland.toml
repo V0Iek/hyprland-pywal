@@ -1,5 +1,3 @@
-import = [ "~/.config/alacritty/catppuccin-mocha-hyprland.toml" ]
-
 [window]
 dimensions = { columns = 122, lines = 30 }
 padding = { x = 10, y = 10 }
