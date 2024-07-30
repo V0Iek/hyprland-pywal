@@ -1,8 +1,6 @@
 configuration {
- font: "Fira Sans 12";
- terminal: "alacritty";
- show-icons: true;
- /*sidebar-mode: true;*/
+  show-icons: true;
+  display-drun: " ";
 }
-@theme "myTheme"
-@theme "colors"
+
+@theme "colors-rofi"

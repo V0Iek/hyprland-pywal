@@ -4,7 +4,7 @@ window#waybar {
   color: @foreground;
   background-color: @background;
 
-  opacity: .7;
+  opacity: .8;
   
   border-radius: 50px;
 }
@@ -36,9 +36,7 @@ window#waybar {
   padding: 0 10px;
 
   background-color: @color3;
-
-  opacity: 1;
-
+  
   border-radius: 50px;
 }
 
@@ -53,8 +51,6 @@ window#waybar.empty #window {
 
   background-color: @color3;
 
-  opacity: 1;
-
   border-radius: 50px;
 }
 
@@ -65,8 +61,6 @@ window#waybar.empty #window {
 
   background-color: @color3;
 
-  opacity: 1;
-
   border-radius: 50px;
 }
 
@@ -74,8 +68,6 @@ window#waybar.empty #window {
   margin: 5px;
   
   background-color: @color3;
-
-  opacity: 1;
 
   border-radius: 50px;
 }
@@ -103,8 +95,6 @@ window#waybar.empty #window {
 
   background-color: @color3;
 
-  opacity: 1;
-
   border-radius: 50px;
 }
 
@@ -115,8 +105,6 @@ window#waybar.empty #window {
 
   background-color: @color3;
 
-  opacity: 1;
-
   border-radius: 50px;
 }
 
@@ -126,8 +114,6 @@ window#waybar.empty #window {
   padding: 0 10px;
 
   background-color: @color3;
-
-  opacity: 1;
 
   border-radius: 50px;
 }
