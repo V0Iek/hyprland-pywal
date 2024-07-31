@@ -1,6 +1,6 @@
 #!/bin/sh
 
-THEME="Catppuccin-Mocha-Standard-Lavender-Dark"
+THEME="Sweet-Ambar-Blue-Dark-v40"
 ICONS="Sweet-Rainbow"
 FONT="Fira Sans Semibold 10"
 CURSOR="McMojave-cursors"
@@ -13,3 +13,5 @@ apply_themes() {
   ${SHEMA} cursor-theme "$CURSOR"
   ${SHEMA} font-name "$FONT"
 }
+
+apply_themes
