@@ -17,3 +17,4 @@ wal -i $wallpaper
 ln -sf $HOME/.cache/wal/colors-waybar.css $HOME/.config/waybar/colors-waybar.css
 ln -sf $HOME/.cache/wal/colors-waybar.css $HOME/.config/wlogout/colors.css
 ln -sf $HOME/.cache/wal/colors-rofi.rasi $HOME/.config/rofi/colors-rofi.rasi
+ln -sf $HOME/.cache/wal/colors-swaync.css $HOME/.config/swaync/colors-swaync.css

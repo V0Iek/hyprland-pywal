@@ -3,6 +3,40 @@
     "spacing": 10
   },
   
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": "  {icon} {format_source}",
+    "format-muted": "  {format_source}",
+    "format-source": "{volume}%  ",
+    "format-source-muted": " ",
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": " ",
+      "portable": " ",
+      "car": " ",
+      "default": [" ", " ", " "]
+    },
+    "tooltip-format": "{format-source}%  ",
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-wifi": " ",
+    "format-ethernet": " ",
+    "tooltip-format": "{ifname} via {gwaddr} on {essid}",
+    "format-linked": " ",
+    "format-disconnected": "⚠",
+    "format-alt": "{ifname}: {ipaddr}/{cidr}"
+  },
+  
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": ["", "", "", "", "", "", "", "", ""]
+  },
+  
   "custom/system": {
     "format": "",
     "tooltip": false
@@ -33,9 +67,16 @@
     "modules": ["custom/system", "cpu", "memory", "temperature"]
   },
   
-  "backlight": {
-    "format": "{percent}% {icon}",
-    "format-icons": ["", "", "", "", "", "", "", "", ""]
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": " ",
+      "power-saver": " "
+    }
   },
   
   "battery": {
@@ -51,52 +92,17 @@
     "format-icons": [" ", " ", " ", " ", " "]
   },
   
-  "power-profiles-daemon": {
-    "format": "{icon}",
-    "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-    "tooltip": true,
-    "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": " ",
-      "power-saver": " "
-    }
-  },
-  
-  "network": {
-    "format-wifi": " ",
-    "format-ethernet": " ",
-    "tooltip-format": "{ifname} via {gwaddr} on {essid}",
-    "format-linked": " ",
-    "format-disconnected": "⚠",
-    "format-alt": "{ifname}: {ipaddr}/{cidr}"
-  },
-  
-  "pulseaudio": {
-    "format": "{volume}% {icon}",
-    "format-bluetooth": "{volume}% {icon} {format_source}",
-    "format-bluetooth-muted": "  {icon} {format_source}",
-    "format-muted": "  {format_source}",
-    "format-source": "{volume}%  ",
-    "format-source-muted": " ",
-    "format-icons": {
-      "headphone": " ",
-      "hands-free": " ",
-      "headset": " ",
-      "phone": " ",
-      "portable": " ",
-      "car": " ",
-      "default": [" ", " ", " "]
-    },
-    "tooltip-format": "{format-source}%  ",
-    "on-click": "pavucontrol"
-  },
-
-  "group/clock": {
+  "group/glock": {
     "orientation": "inherit",
     "modules": [ "clock", "custom/notification" ]
   },
 
+  "clock": {
+    "format": "{:%Od %b %H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  
   "custom/notification": {
     "tooltip": false,
     "format": "{icon}",
@@ -116,12 +122,6 @@
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
     "escape": true
-  },
-  
-  "clock": {
-    "format": "{:%Od %b %H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
   },
   
   "custom/power": {
