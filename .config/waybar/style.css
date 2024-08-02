@@ -1,6 +1,8 @@
 @import "colors-waybar.css";
 
 window#waybar {
+  font-family: FiraSans Semibold;
+
   color: @foreground;
   background-color: @background;
 
