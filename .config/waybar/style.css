@@ -19,9 +19,7 @@ window#waybar {
   background-color: @color3;
 
   border-radius: 50px;
-}
 
-#workspaces {
   transition: all 0.3s ease-in-out;
 }
 
@@ -30,7 +28,6 @@ window#waybar {
 
   border-radius: 50px;
 }
-
 
 #window {
   margin: 5px;
@@ -44,6 +41,10 @@ window#waybar {
 
 window#waybar.empty #window {
   background-color: transparent;
+}
+
+#tray {
+  margin: 5px;
 }
 
 #pulseaudio {
@@ -66,19 +67,17 @@ window#waybar.empty #window {
   border-radius: 50px;
 }
 
-#hardware {
+#backlight {
   margin: 5px;
   
+  padding: 0 10px;
+
   background-color: @color3;
 
   border-radius: 50px;
 }
 
-#custom-system {
-  padding: 0 10px;
-}
-
-#temperature {
+#cpu {
   padding: 0 10px;
 } 
 
@@ -86,15 +85,21 @@ window#waybar.empty #window {
   padding: 0 10px;
 } 
 
-#cpu {
+#temperature {
   padding: 0 10px;
-} 
+}
 
-#backlight {
+#power-profiles-daemon {
+  padding: 0 10px;
+}
+
+#custom-system {
+  padding: 0 10px;
+}
+
+#hardware {
   margin: 5px;
   
-  padding: 0 10px;
-
   background-color: @color3;
 
   border-radius: 50px;

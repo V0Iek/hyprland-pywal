@@ -1,5 +1,5 @@
 @define-color cc-bg {background};
-@define-color noti-border-color #00000000;
+@define-color noti-border-color rgba(0, 0, 0, 0);
 @define-color noti-bg {background};
 @define-color noti-bg-opaque {background};
 @define-color noti-bg-darker {color0};

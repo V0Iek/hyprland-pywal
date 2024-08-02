@@ -9,7 +9,7 @@
 
   "modules-left": [ "hyprland/workspaces" ],
   "modules-center": [ "hyprland/window" ],
-  "modules-right": [ "tray", "pulseaudio", "network", "backlight", "group/hardware", "power-profiles-daemon", "battery", "group/glock", "custom/power" ]
+  "modules-right": [ "tray", "pulseaudio", "network", "backlight", "group/hardware", "battery", "group/glock", "custom/power" ]
 }
 
 # vim: ft=json

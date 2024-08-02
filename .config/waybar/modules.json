@@ -37,11 +37,6 @@
     "format-icons": ["", "", "", "", "", "", "", "", ""]
   },
   
-  "custom/system": {
-    "format": "",
-    "tooltip": false
-  },
-
   "cpu": {
     "format": "{usage}% ",
     "tooltip": false
@@ -57,16 +52,6 @@
     "format-icons": ["", "", ""]
   },
 
-  "group/hardware": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 300,
-      "children-class": "not-memory",
-      "transition-left-to-right": false
-    },
-    "modules": ["custom/system", "cpu", "memory", "temperature"]
-  },
-  
   "power-profiles-daemon": {
     "format": "{icon}",
     "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
@@ -79,6 +64,26 @@
     }
   },
   
+  "custom/system": {
+    "format": "",
+  },
+
+  "group/hardware": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-system",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/system",
+      "cpu",
+      "memory",
+      "temperature",
+      "power-profiles-daemon"
+    ]
+  },
+  
   "battery": {
     "states": {
       "warning": 30,
@@ -88,7 +93,7 @@
     "format-full": "{capacity}% {icon}",
     "format-charging": "{capacity}%  ",
     "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
+    "format-tooltip": "{time} {icon}",
     "format-icons": [" ", " ", " ", " ", " "]
   },
   
@@ -100,20 +105,19 @@
   "clock": {
     "format": "{:%Od %b %H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
   },
   
   "custom/notification": {
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "<span foreground='red'><sup></sup></span>",
+      "notification": "<span foreground='red'><sup> </sup></span>",
       "none": "",
-      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-notification": "<span foreground='red'><sup> </sup></span>",
       "dnd-none": "",
-      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-notification": "<span foreground='red'><sup> </sup></span>",
       "inhibited-none": "",
-      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-notification": "<span foreground='red'><sup> </sup></span>",
       "dnd-inhibited-none": ""
     },
     "return-type": "json",
