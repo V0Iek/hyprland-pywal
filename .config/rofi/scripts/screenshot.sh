@@ -9,12 +9,12 @@ dir="$HOME/.config/rofi"
 rofi_command="rofi -theme $dir/colors-rofi.rasi"
 
 # Options
-screen="  Screen"
-area="  Area"
-window="  Window"
+screen="󰍹  Screen"
+window="󱂬  Window"
+area="󰒉  Area"
 
 # Variable passed to rofi
-options="$screen\n$area\n$window"
+options="$screen\n$window\n$area"
 
 chosen="$(echo -e "$options" | $rofi_command -p '' -dmenu -selected-row 1)"
 case $chosen in
