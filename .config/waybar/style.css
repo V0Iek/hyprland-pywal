@@ -23,7 +23,13 @@ window#waybar {
   transition: all 0.3s ease-in-out;
 }
 
+#workspaces button {
+  padding: 0 5px;
+}
+
 #workspaces button.active {
+  padding: 0 10px;
+
   background-color: @color9;
 
   border-radius: 50px;
