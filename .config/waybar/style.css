@@ -11,6 +11,15 @@ window#waybar {
   border-radius: 50px;
 }
 
+#custom-appmenu {
+  margin-left: 10px;
+  margin-right: 5px;
+
+  font-size: 19;
+
+  color: #74c7ec;
+}
+
 #workspaces {
   margin: 5px;
 

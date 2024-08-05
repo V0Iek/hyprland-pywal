@@ -1,4 +1,10 @@
 {
+  "custom/appmenu": {
+    "format": " ",
+    "on-click": "killall rofi || rofi -show drun",
+    "tooltip": false
+  },
+
   "tray": {
     "spacing": 10
   },
