@@ -4,7 +4,7 @@ Minimal Hyprland config with colors based on wallpaper
 
 ---
 
-## 📷 Prezentation
+## 📷 Presentation
 
 ![Desktop Overview](Screenshots/pywal.gif)
 *Main desktop*
